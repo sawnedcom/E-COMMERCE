@@ -1,0 +1,276 @@
+:root {
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  --white: #ffffff;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+/* NAVBAR */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+.nav-link {
+  color: black !important;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 500;
+}
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+nav li {
+  border: none;
+  display: inline-block;
+  padding-right: 5px;
+  transition: all linear 0.5s;
+  margin-right: 20px;
+  font-size: 18px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding-right: 5px;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+}
+li.active::after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 100%;
+  background-color: #ff105e;
+  left: 0;
+  bottom: -7px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  animation: appear 0.2s linear;
+}
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.navbar .dropdown ul {
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: #15222b;
+  font-weight: 500;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  font-weight: 500;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  li.active::after {
+    width: 30%;
+  }
+}
+
+/* LANDING PAGE / HOME */
+
+.hero {
+  background-image: url(image/landing-page.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #212529cc;
+  z-index: -1;
+}
+
+/* PRODUCT */
+
+#product {
+  padding-top: 70px;
+}
+.bayangan {
+  box-shadow: var(--box-shadow);
+}
+.price {
+  float: right;
+  font-weight: bold;
+  color: darkgreen;
+  font-size: 22px;
+}
+
+.h3 {
+  font-size: 25px;
+}
+
+/* hot sales */
+
+.dolar {
+  color: darkgreen;
+}
+
+@media (max-width: 430px) {
+  .nothing {
+    display: none;
+  }
+}
+
+/* TEAM */
+
+:root {
+  --primary: #32c36c;
+  --light: #f6f7f8;
+  --dark: #1a2a36;
+}
+
+/*** Team ***/
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+
+.team-item img {
+  border-radius: 0 0 0 0;
+}
+
+.team-item .team-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: #ffffff;
+  transition: 0.5s;
+}
+
+.service-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  position: relative;
+  margin: -50px 0 25px 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  background: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+}
+
+.service-item:hover .service-icon {
+  color: #ffffff;
+  background: var(--primary);
+}
+
+.btn {
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.btn.btn-primary,
+.btn.btn-outline-primary:hover {
+  color: #ffffff;
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-lg-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+/* footer */
+
+.lebarlogo {
+  width: 175px;
+}
+.price2 {
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+}
