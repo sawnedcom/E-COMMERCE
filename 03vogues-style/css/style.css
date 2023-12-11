@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f3f3f3;
+}
+/* lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+/* lancelot */
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Lato&family=Roboto&display=swap');
+
+/* libre franklin */
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Lato&family=Libre+Franklin&family=Roboto&display=swap');
+
+.font-ku1 {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-ku2 {
+  font-family: 'Lancelot', serif;
+}
+
+.font-ku3 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+.hero {
+  background-image: url('../image/image-1.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 2;
+}
+
+.hero::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #212529ad;
+  z-index: -1;
+}
+.hero2 {
+  background-image: url('../image/model-3.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 2;
+}
+
+.hero2::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #212529ad;
+  z-index: -1;
+}
+
+.hero3 {
+  background-image: url('../image/model-entah-berapa.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  background-attachment: fixed;
+}
+
+.hero3::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #212529ad;
+  z-index: -1;
+}
+
+.hero4 {
+  background-image: url('../image/model-ke-4-kalo-gak-sakah.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  background-attachment: fixed;
+}
+
+.hero4::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #212529ad;
+  z-index: -1;
+}
+
+.btn {
+  transition: 0.7s;
+}
+
+.ima-25 {
+  width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+  .ima-25 {
+    width: 50%;
+  }
+}
+
+/* footer */
+
+.btn-instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+  color: white;
+  border: none;
+}
+
+.btn-youtube {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.btn-youtube:hover {
+  background-color: red;
+}
+
+.btn-tiktok {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btn-tiktok:hover {
+  background-color: black;
+}
+
+.btn-github {
+  background-color: white;
+  color: black;
+}
+
+.btn-github:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-fiverr {
+  background-color: #2fcc44;
+  color: white;
+  border: none;
+}
+
+.btn-fiverr:hover {
+  background-color: #3bc44e;
+}
